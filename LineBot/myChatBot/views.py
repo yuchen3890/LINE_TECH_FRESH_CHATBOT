@@ -13,6 +13,7 @@ line_bot_api = LineBotApi(os.environ.get("CHANNEL_ACCESS_TOKEN"))
 parser = WebhookParser(os.environ.get("CHANNEL_SECRET"))
 
 
+
 # Self-introduction
 self_introduction1 = "My name is Lin Yu Chen. I’m a third grade student from National Taiwan University and the department of Information Management."
 self_introduction2 = "I’m a person full of curiosity and enjoy learning new things. I have participated in several projects, such as web programming, machine learning and text-mining related. I enjoy teamworks since I can always learn new things from different people, like their insights or attitude toward difficulties."
