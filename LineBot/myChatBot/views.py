@@ -7,9 +7,11 @@ from linebot import LineBotApi, WebhookParser
 from linebot.exceptions import InvalidSignatureError, LineBotApiError
 from linebot.models import MessageEvent, TextSendMessage, TemplateSendMessage, ButtonsTemplate, MessageTemplateAction, URIAction, PostbackTemplateAction, ConfirmTemplate, QuickReply, QuickReplyButton, ImageCarouselTemplate, ImageCarouselColumn
 
+import os
 
-line_bot_api = LineBotApi(settings.LINE_CHANNEL_ACCESS_TOKEN)
-parser = WebhookParser(settings.LINE_CHANNEL_SECRET)
+line_bot_api = LineBotApi(os.environ.get("CHANNEL_ACCESS_TOKEN"))
+parser = WebhookParser(os.environ.get("CHANNEL_SECRET"))
+
 
 # Self-introduction
 self_introduction1 = "My name is Lin Yu Chen. I’m a third grade student from National Taiwan University and the department of Information Management."
@@ -135,7 +137,7 @@ def callback(request):
                     )
 
 
-                    
+
 
                 elif message == "More Questions":
             
