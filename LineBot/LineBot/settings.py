@@ -32,7 +32,7 @@ SECRET_KEY = 'u=+_k1z)#mawe1lvn0km%(pbm5(2-4x7xh_j*7ies&$h$ow_#-'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "76608ec26fb9.ngrok.io", # 允許網域名稱
+    "line-tech-fresh-chatbot.herokuapp.com", # 允許網域名稱
 ]
 
 
@@ -127,3 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+import os
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')

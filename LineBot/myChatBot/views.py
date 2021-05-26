@@ -134,6 +134,9 @@ def callback(request):
                         )
                     )
 
+
+                    
+
                 elif message == "More Questions":
             
                     line_bot_api.reply_message(  # 回復傳入的訊息文字
