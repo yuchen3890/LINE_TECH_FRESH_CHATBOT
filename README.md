@@ -8,6 +8,6 @@ This is a self-promoting chatbot, which is build up with Django.
 - TextSendMessage (QuickReply)
 - TemplateSendMessage (ButtonsTemplate, ImageCarouselTemplate)
 
-### Management API with richmenu 
+### Manage API of richmenu 
 - Line bot designer
 - Postman
